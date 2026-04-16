@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nasra Soulaimane – Candidate DGC · CNAM Nancy 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#FBF8F5;--card:#FFFFFF;--border:#E8DDD4;
+  --accent:#9B6B8A;--accent2:#C4956A;--soft:#D4A8C0;
+  --text:#2C2028;--muted:#7A6872;
+  --serif:'Cormorant Garamond',serif;--sans:'Jost',sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(155,107,138,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(155,107,138,.05) 1px,transparent 1px);background-size:55px 55px}
+
+@keyframes f1{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-22px) rotate(5deg)}}
+@keyframes f2{0%,100%{transform:translateX(0)}50%{transform:translateX(18px)}}
+@keyframes f3{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(24px) scale(1.05)}}
+@keyframes f4{0%,100%{transform:rotate(0deg)}50%{transform:rotate(8deg)}}
+@keyframes f5{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(-14px) translateX(10px)}}
+.fs{position:fixed;font-family:var(--serif);color:var(--accent);font-weight:600;user-select:none;pointer-events:none;z-index:0;line-height:1}
+.fs-a{font-size:8rem;top:7%;left:2%;opacity:.035;animation:f1 13s ease-in-out infinite}
+.fs-b{font-size:6rem;top:18%;left:88%;opacity:.035;animation:f2 9s ease-in-out infinite}
+.fs-c{font-size:10rem;top:38%;left:4%;opacity:.028;animation:f3 16s ease-in-out infinite 1s}
+.fs-d{font-size:5rem;top:55%;left:85%;opacity:.035;animation:f4 10s ease-in-out infinite 2s}
+.fs-e{font-size:7rem;top:72%;left:18%;opacity:.028;animation:f2 12s ease-in-out infinite 3s}
+.fs-f{font-size:5.5rem;top:82%;left:72%;opacity:.035;animation:f1 11s ease-in-out infinite}
+.fs-g{font-size:4rem;top:30%;left:52%;opacity:.025;animation:f5 14s ease-in-out infinite 2s}
+.fs-h{font-size:3rem;top:12%;left:45%;opacity:.028;animation:f2 8s ease-in-out infinite 1s}
+.fs-i{font-size:3.5rem;top:65%;left:40%;opacity:.025;animation:f3 10s ease-in-out infinite 4s}
+.fs-j{font-size:2.5rem;top:48%;left:75%;opacity:.028;animation:f1 9s ease-in-out infinite 2s}
+.fs-k{font-size:4rem;top:90%;left:35%;opacity:.025;animation:f4 13s ease-in-out infinite}
+.fs-l{font-size:3rem;top:22%;left:25%;opacity:.028;animation:f5 11s ease-in-out infinite 3s}
+.fs-m{font-size:5rem;top:5%;left:68%;opacity:.025;animation:f3 12s ease-in-out infinite 1s;font-family:var(--sans)}
+.fs-n{font-size:4rem;top:78%;left:8%;opacity:.025;animation:f2 15s ease-in-out infinite 2s;font-family:var(--sans)}
+.fs-o{font-size:3.5rem;top:43%;left:30%;opacity:.028;animation:f1 10s ease-in-out infinite 4s;font-family:var(--sans)}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1rem 3rem;background:rgba(251,248,245,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav-name{font-family:var(--serif);font-size:1.1rem;color:var(--accent);font-style:italic}
+.nav-links{display:flex;gap:1.5rem}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--accent)}
+
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:8rem 3rem 4rem;position:relative;z-index:1}
+.hero-tag{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent2);margin-bottom:1.2rem;display:flex;align-items:center;gap:.7rem}
+.hero-tag::before{content:'';display:block;width:2rem;height:1px;background:var(--accent2)}
+h1{font-family:var(--serif);font-size:clamp(3rem,6vw,5.5rem);font-weight:600;line-height:1.05;color:var(--text);margin-bottom:.8rem}
+h1 em{color:var(--accent);font-style:italic;font-weight:400}
+.hero-sub{font-size:.97rem;color:var(--muted);max-width:34rem;margin-bottom:2.5rem;line-height:1.95}
+.hero-cta{display:inline-flex;align-items:center;gap:.6rem;padding:.7rem 2rem;background:var(--accent);color:#fff;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border:none;font-family:var(--sans);transition:background .25s;border-radius:1px}
+.hero-cta:hover{background:var(--accent2)}
+.hero-chips{display:flex;gap:.7rem;margin-top:1.5rem;flex-wrap:wrap}
+.chip{padding:.3rem 1rem;border:1px solid var(--border);border-radius:20px;font-size:.73rem;color:var(--muted);background:var(--card)}
+
+@keyframes scroll-band{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.deco-band{overflow:hidden;padding:.5rem 0;background:#F5F0EB;border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;z-index:1}
+.band-inner{display:flex;white-space:nowrap;animation:scroll-band 25s linear infinite}
+.band-txt{font-size:.62rem;letter-spacing:.3rem;color:var(--soft);padding-right:3rem}
+
+section{padding:5rem 3rem;max-width:1100px;margin:0 auto;position:relative;z-index:1}
+.section-tag{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent2);margin-bottom:.8rem;display:flex;align-items:center;gap:.6rem}
+.section-tag::before{content:'';display:block;width:1.5rem;height:1px;background:var(--accent2)}
+h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:400;color:var(--text);margin-bottom:.4rem}
+.section-intro{color:var(--muted);max-width:32rem;margin-bottom:3rem;font-size:.9rem}
+
+.project-card{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);padding:2.5rem}
+.project-card h3{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--accent);margin-bottom:1rem;font-style:italic}
+.project-card p{color:var(--muted);font-size:.92rem;line-height:1.95;max-width:38rem}
+.path-steps{display:flex;gap:0;margin-top:2rem;flex-wrap:wrap}
+.step{padding:.5rem 1.2rem;border:1px solid var(--border);font-size:.76rem;letter-spacing:.07em;color:var(--muted);position:relative;background:var(--bg)}
+.step.active{border-color:var(--accent);color:var(--accent);background:rgba(155,107,138,.07);font-weight:500}
+.step+.step::before{content:'→';position:absolute;left:-.75rem;top:50%;transform:translateY(-50%);color:var(--border);font-size:.68rem}
+
+.tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+.tool-wrap{border-radius:4px;overflow:hidden;box-shadow:0 4px 20px rgba(155,107,138,.09)}
+.tool-logo{width:22px;height:22px;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;font-family:var(--sans)}
+.tool-dots{display:flex;gap:4px}
+.tdot{width:8px;height:8px;border-radius:50%}
+.tool-titlebar{padding:.4rem .8rem;display:flex;align-items:center;justify-content:space-between}
+.tool-tabs{display:flex;padding:0 .5rem}
+.ttab{padding:.25rem .7rem;font-size:.6rem;cursor:default;border-radius:2px 2px 0 0;margin-top:3px}
+.tool-ribbon{padding:.35rem .8rem;display:flex;gap:.8rem;align-items:center}
+.tgroup{display:flex;gap:.35rem;align-items:center;padding-right:.8rem;border-right:1px solid rgba(0,0,0,.08)}
+.tgroup:last-child{border:none}
+.tbtn{width:28px;height:24px;border-radius:2px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;cursor:default;border-width:1px;border-style:solid}
+.tbtn-icon{font-size:.65rem;font-weight:700;font-family:var(--sans)}
+.tbtn-lbl{font-size:.42rem;color:#aaa}
+.tool-statusbar{padding:.2rem .8rem;display:flex;justify-content:space-between}
+.tstatus{font-size:.5rem;opacity:.65}
+
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.cursor{display:inline-block;width:1px;height:.75em;background:currentColor;animation:blink .8s step-end infinite;vertical-align:text-bottom;margin-left:1px}
+
+.xl-wrap{border:1px solid #C6E0C8}.xl-bar{background:#217346}.xl-tabs{background:#1E6B3F}
+.xl-ttab{color:rgba(255,255,255,.6)}.xl-ttab.active{background:#F0F0F0;color:#217346;font-weight:500}
+.xl-ribbon{background:#F0F0F0;border-bottom:2px solid #C6E0C8;padding:.35rem .8rem;display:flex;gap:.8rem;align-items:center}
+.xl-tbtn{background:#fff;border-color:#ddd}.xl-tbtn-icon{color:#217346}
+.xl-formula{background:#fff;padding:.22rem .7rem;border-bottom:1px solid #ddd;display:flex;align-items:center;gap:.5rem;font-size:.62rem;color:#217346}
+.xl-grid{background:#fff}
+.xg-colbar{display:flex;background:#F5F5F5;border-bottom:1px solid #E0E0E0}
+.xg-col{flex:1;padding:.16rem;font-size:.56rem;color:#aaa;text-align:center;border-right:1px solid #eee;font-weight:500;min-width:0}
+.xg-col.idx{max-width:18px;background:#EEEEEE}
+.xg-row{display:flex;border-bottom:1px solid #F2F2F2}
+.xg-cell{flex:1;height:12px;border-right:1px solid #F5F5F5;min-width:0;transition:background .4s}
+.xg-cell.idx{max-width:18px;background:#F5F5F5;border-right:1px solid #E0E0E0}
+.xg-cell.v{background:rgba(33,115,70,.08)}.xg-cell.v2{background:rgba(196,149,106,.1)}
+.xg-cell.sel{background:rgba(33,115,70,.25);outline:1.5px solid #217346}
+
+.sl-wrap{border:1px solid #C8D8F0}.sl-bar{background:#1B3A6B}.sl-tabs{background:#162F58}
+.sl-ttab{color:rgba(255,255,255,.55)}.sl-ttab.active{background:#F7F9FC;color:#1B3A6B;font-weight:500}
+.sl-ribbon{background:#F7F9FC;border-bottom:2px solid #C8D8F0;padding:.35rem .8rem;display:flex;gap:.8rem;align-items:center}
+.sl-tbtn{background:#fff;border-color:#d0ddef}.sl-tbtn-icon{color:#1B3A6B}
+.sl-fields{display:flex;flex-direction:column;gap:.35rem;padding:.6rem .8rem}
+.sl-row{display:flex;align-items:center;gap:.5rem}
+.sl-lbl{font-size:.56rem;color:#8a9fc0;min-width:65px;text-align:right}
+.sl-bar-el{height:7px;border-radius:3px;background:#EEF2F9;flex:1;overflow:hidden}
+.sl-fill{height:100%;border-radius:3px;transition:width 1.5s ease}
+
+.dx-wrap{border:1px solid #FFD0B0}.dx-bar{background:#FF6B2B}.dx-tabs{background:#E85A1E}
+.dx-ttab{color:rgba(255,255,255,.6)}.dx-ttab.active{background:#FFF7F3;color:#FF6B2B;font-weight:500}
+.dx-ribbon{background:#FFF7F3;border-bottom:2px solid #FFD0B0;padding:.35rem .8rem;display:flex;gap:.8rem;align-items:center}
+.dx-tbtn{background:#fff;border-color:#FFD0B0}.dx-tbtn-icon{color:#FF6B2B}
+.dx-body{padding:.5rem .8rem;display:flex;flex-direction:column;gap:.35rem}
+.dx-doc{background:#fff;border:1px solid #FFE8D8;border-radius:3px;padding:.4rem .6rem;display:flex;align-items:center;gap:.5rem;transition:border-color .3s,background .3s}
+.dx-doc.scanning{border-color:#FF6B2B;background:#FFF3EE}
+.dx-scan-bar{height:3px;background:#FFE8D8;border-radius:2px;overflow:hidden;flex:1}
+.dx-scan-fill{height:100%;background:#FF6B2B;border-radius:2px;width:0}
+.dx-badge{font-size:.48rem;padding:.1rem .35rem;border-radius:10px;font-family:var(--sans);font-weight:500;white-space:nowrap}
+.dx-badge.ok{background:#E8F5E9;color:#388E3C}.dx-badge.pend{background:#FFF3E0;color:#F57C00}.dx-badge.scan{background:#FFE0D0;color:#FF6B2B}
+.dx-lines{flex:1;display:flex;flex-direction:column;gap:2px}
+.dx-line{height:4px;border-radius:2px;background:#FFE8D8}.dx-line.short{width:60%}
+
+.od-wrap{border:1px solid #C5B8E8}.od-bar{background:#714B67}.od-tabs{background:#5C3A55}
+.od-ttab{color:rgba(255,255,255,.6)}.od-ttab.active{background:#F9F6FC;color:#714B67;font-weight:500}
+.od-ribbon{background:#F9F6FC;border-bottom:2px solid #C5B8E8;padding:.35rem .8rem;display:flex;gap:.8rem;align-items:center}
+.od-tbtn{background:#fff;border-color:#C5B8E8}.od-tbtn-icon{color:#714B67}
+.od-body{padding:.5rem .8rem}
+.od-kpis{display:grid;grid-template-columns:1fr 1fr;gap:.4rem}
+.od-kpi{background:#F9F6FC;border:1px solid #E8DFF5;border-radius:3px;padding:.4rem .5rem}
+.od-kpi-lbl{font-size:.5rem;color:#A090B8;margin-bottom:2px}
+.od-kpi-bar{height:5px;border-radius:2px;background:#E8DFF5;overflow:hidden;margin-bottom:2px}
+.od-kpi-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,#714B67,#A080B8);transition:width 1.8s ease}
+.od-kpi-val{font-size:.5rem;color:#714B67;font-weight:500}
+
+.timeline{position:relative;padding-left:1.5rem}
+.timeline::before{content:'';position:absolute;left:0;top:.5rem;bottom:0;width:1px;background:var(--border)}
+.tl-item{position:relative;margin-bottom:2.6rem;padding-left:1.5rem}
+.tl-item::before{content:'';position:absolute;left:-1.45rem;top:.55rem;width:8px;height:8px;border-radius:50%;background:var(--soft);border:2px solid var(--accent)}
+.tl-meta{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:.2rem}
+.tl-role{font-family:var(--serif);font-size:1.08rem;color:var(--text);margin-bottom:.1rem}
+.tl-org{font-size:.83rem;color:var(--accent);margin-bottom:.45rem}
+.tl-desc{font-size:.87rem;color:var(--muted);line-height:1.85}
+.tl-desc li{list-style:none;padding-left:1rem;position:relative;margin-bottom:.18rem}
+.tl-desc li::before{content:'–';position:absolute;left:0;color:var(--border)}
+
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.2rem}
+.skill-cat{background:var(--card);border:1px solid var(--border);padding:1.6rem;position:relative;overflow:hidden}
+.skill-cat::before{position:absolute;bottom:.4rem;right:.8rem;font-size:2rem;opacity:.09;font-family:var(--serif);font-weight:600}
+.skill-cat.c1::before{content:'€';color:var(--accent)}.skill-cat.c2::before{content:'∑';color:var(--accent2)}
+.skill-cat.c3::before{content:'◎';color:var(--soft)}.skill-cat.c4::before{content:'✦';color:var(--accent)}
+.skill-cat-title{font-size:.67rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.skill-item{font-size:.85rem;color:var(--muted);padding:.22rem 0;border-bottom:1px solid rgba(155,107,138,.06)}
+
+.edu-list{display:flex;flex-direction:column;gap:1.1rem}
+.edu-card{display:flex;gap:1.8rem;padding:1.5rem 1.8rem;background:var(--card);border:1px solid var(--border);transition:border-color .2s}
+.edu-card:hover{border-color:var(--accent)}
+.edu-card.highlight{border-left:3px solid var(--accent);background:rgba(155,107,138,.03)}
+.edu-year{font-family:var(--serif);font-size:1.1rem;color:var(--border);min-width:4.5rem;padding-top:.1rem;flex-shrink:0}
+.edu-diploma{font-size:.92rem;color:var(--text);font-weight:500;margin-bottom:.12rem}
+.edu-school{font-size:.82rem;color:var(--accent2);margin-bottom:.3rem}
+.edu-detail{font-size:.78rem;color:var(--muted)}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.contact-block{background:var(--card);border:1px solid var(--border);padding:1.7rem}
+.contact-label{font-size:.67rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
+.contact-value{font-size:.93rem;color:var(--accent)}
+
+footer{padding:2rem 3rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;z-index:1;background:#F5F0EB;position:relative}
+.footer-name{font-family:var(--serif);font-size:.95rem;color:var(--muted);font-style:italic}
+.footer-tag{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--border)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.hero>*{animation:fadeUp .65s ease both}
+.hero-tag{animation-delay:.1s}.hero h1{animation-delay:.2s}.hero-sub{animation-delay:.3s}
+.hero-cta{animation-delay:.4s}.hero-chips{animation-delay:.5s}
+</style>
+</head>
+<body>
+
+<span class="fs fs-a">∑</span><span class="fs fs-b">%</span><span class="fs fs-c">€</span>
+<span class="fs fs-d">÷</span><span class="fs fs-e">∫</span><span class="fs fs-f">∑</span><span class="fs fs-g">=</span>
+<span class="fs fs-h">π</span><span class="fs fs-i">±</span><span class="fs fs-j">×</span>
+<span class="fs fs-k">√</span><span class="fs fs-l">≠</span><span class="fs fs-m">△</span>
+<span class="fs fs-n">∞</span><span class="fs fs-o">≈</span>
+
+<nav>
+  <span class="nav-name">Nasra Soulaimane</span>
+  <div class="nav-links">
+    <a href="#projet">Projet</a><a href="#outils">Outils</a><a href="#experiences">Parcours</a>
+    <a href="#competences">Compétences</a><a href="#formations">Formations</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">Candidate DGC · CNAM Nancy · 2026</div>
+  <h1>Nasra<br><em>Soulaimane</em></h1>
+  <p class="hero-sub">Future diplômée en gestion et comptabilité, avec une expérience concrète en paie, administration et gestion. En route vers l'expertise comptable.</p>
+  <button class="hero-cta" onclick="document.getElementById('projet').scrollIntoView({behavior:'smooth'})">Découvrir mon projet ↓</button>
+  <div class="hero-chips">
+    <span class="chip">∑ Excel · Silae · Dext · Odoo</span>
+    <span class="chip">≡ DSN &amp; Charges sociales</span>
+    <span class="chip">€ Bulletins de paie</span>
+    <span class="chip">◎ Mayotte → Nancy 2026</span>
+  </div>
+</div>
+
+<div class="deco-band"><div class="band-inner">
+  <span class="band-txt">DÉBIT · CRÉDIT · BILAN · RÉSULTAT · PAIE · DSN · LIASSE · COTISATIONS · LETTRAGE · SOLDE · TRÉSORERIE · FISCALITÉ ·&nbsp;</span>
+  <span class="band-txt">DÉBIT · CRÉDIT · BILAN · RÉSULTAT · PAIE · DSN · LIASSE · COTISATIONS · LETTRAGE · SOLDE · TRÉSORERIE · FISCALITÉ ·&nbsp;</span>
+</div></div>
+
+<section id="projet">
+  <div class="section-tag">Mon ambition</div>
+  <h2>Projet professionnel</h2>
+  <p class="section-intro">Un cap clair, construit par l'expérience terrain.</p>
+  <div class="project-card">
+    <h3>Du terrain à l'expertise comptable</h3>
+    <p>Après une alternance en gestion de la paie à Mayotte — au cœur d'une structure agricole réelle, en interface directe avec un cabinet comptable — j'ai acquis une vision concrète des enjeux comptables, sociaux et administratifs d'une entreprise. Le DGC au CNAM Nancy est l'étape structurante qui me permettra de consolider ces acquis et construire une trajectoire vers l'expertise comptable.</p>
+    <div class="path-steps">
+      <div class="step active">Titre Pro Paie · 2026</div>
+      <div class="step active">DGC · CNAM Nancy</div>
+      <div class="step">DSCG</div>
+      <div class="step">Expert-comptable</div>
+    </div>
+  </div>
+</section>
+
+<section id="outils">
+  <div class="section-tag">Logiciels métier</div>
+  <h2>Outils du quotidien</h2>
+  <p class="section-intro">Quatre logiciels maîtrisés en situation réelle d'alternance.</p>
+  <div class="tools-grid">
+
+    <div class="tool-wrap xl-wrap">
+      <div class="tool-titlebar xl-bar">
+        <div class="tool-logo" style="background:#fff;color:#217346">X</div>
+        <div class="tool-dots"><div class="tdot" style="background:#FF5F57"></div><div class="tdot" style="background:#FEBC2E"></div><div class="tdot" style="background:#28C840"></div></div>
+      </div>
+      <div class="tool-tabs xl-tabs">
+        <div class="ttab xl-ttab active">Accueil</div><div class="ttab xl-ttab">Insertion</div>
+        <div class="ttab xl-ttab">Formules</div><div class="ttab xl-ttab">Données</div>
+      </div>
+      <div class="xl-ribbon">
+        <div class="tgroup">
+          <div class="tbtn xl-tbtn"><div class="tbtn-icon xl-tbtn-icon">B</div><div class="tbtn-lbl">Gras</div></div>
+          <div class="tbtn xl-tbtn"><div class="tbtn-icon xl-tbtn-icon" style="font-style:italic">I</div><div class="tbtn-lbl">Italic</div></div>
+        </div>
+        <div class="tgroup">
+          <div class="tbtn xl-tbtn"><div class="tbtn-icon xl-tbtn-icon">∑</div><div class="tbtn-lbl">Somme</div></div>
+          <div class="tbtn xl-tbtn"><div class="tbtn-icon xl-tbtn-icon" style="font-size:.55rem">fx</div><div class="tbtn-lbl">Formule</div></div>
+        </div>
+        <div class="tgroup">
+          <div class="tbtn xl-tbtn"><div class="tbtn-icon xl-tbtn-icon" style="font-size:.52rem">TCD</div><div class="tbtn-lbl">Tableau</div></div>
+          <div class="tbtn xl-tbtn"><div class="tbtn-icon xl-tbtn-icon">📊</div><div class="tbtn-lbl">Graph.</div></div>
+        </div>
+      </div>
+      <div class="xl-formula"><span style="color:#999;font-weight:500">fx</span><span id="xl-formula-txt" style="color:#217346">=SOMME(B2:B10)</span><span class="cursor" style="color:#217346"></span></div>
+      <div class="xl-grid">
+        <div class="xg-colbar">
+          <div class="xg-col idx"></div>
+          <div class="xg-col">A</div><div class="xg-col">B</div><div class="xg-col">C</div><div class="xg-col">D</div><div class="xg-col">E</div>
+        </div>
+        <div id="xl-body"></div>
+      </div>
+      <div class="tool-statusbar xl-bar">
+        <div style="display:flex;gap:3px">
+          <span style="font-size:.5rem;color:rgba(255,255,255,.55);padding:.1rem .35rem;background:rgba(255,255,255,.15)">Feuil1</span>
+          <span style="font-size:.5rem;color:rgba(255,255,255,.45);padding:.1rem .35rem">Feuil2</span>
+        </div>
+        <span id="xl-status" style="font-size:.5rem;color:rgba(255,255,255,.65)">Prêt</span>
+      </div>
+    </div>
+
+    <div class="tool-wrap sl-wrap">
+      <div class="tool-titlebar sl-bar">
+        <div class="tool-logo" style="background:#4A7ABF;color:#fff">S</div>
+        <div class="tool-dots"><div class="tdot" style="background:#FF5F57"></div><div class="tdot" style="background:#FEBC2E"></div><div class="tdot" style="background:#28C840"></div></div>
+      </div>
+      <div class="tool-tabs sl-tabs">
+        <div class="ttab sl-ttab active">Bulletins</div><div class="ttab sl-ttab">DSN</div>
+        <div class="ttab sl-ttab">Salariés</div><div class="ttab sl-ttab">Cotisations</div>
+      </div>
+      <div class="sl-ribbon">
+        <div class="tgroup">
+          <div class="tbtn sl-tbtn"><div class="tbtn-icon sl-tbtn-icon">€</div><div class="tbtn-lbl">Paie</div></div>
+          <div class="tbtn sl-tbtn"><div class="tbtn-icon sl-tbtn-icon" style="font-size:.52rem">DSN</div><div class="tbtn-lbl">Décl.</div></div>
+        </div>
+        <div class="tgroup">
+          <div class="tbtn sl-tbtn"><div class="tbtn-icon sl-tbtn-icon">∑</div><div class="tbtn-lbl">Charges</div></div>
+          <div class="tbtn sl-tbtn"><div class="tbtn-icon sl-tbtn-icon">👤</div><div class="tbtn-lbl">Salarié</div></div>
+        </div>
+      </div>
+      <div class="sl-fields">
+        <div class="sl-row"><span class="sl-lbl">Salaire brut</span><div class="sl-bar-el"><div class="sl-fill" id="sl-b1" style="width:0%;background:linear-gradient(90deg,#1B3A6B,#4a7abf)"></div></div></div>
+        <div class="sl-row"><span class="sl-lbl">Cotisations</span><div class="sl-bar-el"><div class="sl-fill" id="sl-b2" style="width:0%;background:linear-gradient(90deg,#C4956A,#e8c4a0)"></div></div></div>
+        <div class="sl-row"><span class="sl-lbl">Net à payer</span><div class="sl-bar-el"><div class="sl-fill" id="sl-b3" style="width:0%;background:linear-gradient(90deg,#217346,#5aad7a)"></div></div></div>
+        <div class="sl-row"><span class="sl-lbl">Réd. Fillon</span><div class="sl-bar-el"><div class="sl-fill" id="sl-b4" style="width:0%;background:linear-gradient(90deg,#9B6B8A,#D4A8C0)"></div></div></div>
+      </div>
+      <div class="tool-statusbar sl-bar">
+        <span class="tstatus" style="color:rgba(255,255,255,.65)">Avr. 2026</span>
+        <span id="sl-status" class="tstatus" style="color:rgba(255,255,255,.65)">Calcul en cours…</span>
+      </div>
+    </div>
+
+    <div class="tool-wrap dx-wrap">
+      <div class="tool-titlebar dx-bar">
+        <div class="tool-logo" style="background:#fff;color:#FF6B2B">D</div>
+        <div class="tool-dots"><div class="tdot" style="background:#FF5F57"></div><div class="tdot" style="background:#FEBC2E"></div><div class="tdot" style="background:#28C840"></div></div>
+      </div>
+      <div class="tool-tabs dx-tabs">
+        <div class="ttab dx-ttab active">Factures</div><div class="ttab dx-ttab">Reçus</div>
+        <div class="ttab dx-ttab">Relevés</div><div class="ttab dx-ttab">Export</div>
+      </div>
+      <div class="dx-ribbon">
+        <div class="tgroup">
+          <div class="tbtn dx-tbtn"><div class="tbtn-icon dx-tbtn-icon">📄</div><div class="tbtn-lbl">Importer</div></div>
+          <div class="tbtn dx-tbtn"><div class="tbtn-icon dx-tbtn-icon" style="font-size:.52rem">OCR</div><div class="tbtn-lbl">Scan</div></div>
+        </div>
+        <div class="tgroup">
+          <div class="tbtn dx-tbtn"><div class="tbtn-icon dx-tbtn-icon">✓</div><div class="tbtn-lbl">Valider</div></div>
+          <div class="tbtn dx-tbtn"><div class="tbtn-icon dx-tbtn-icon">→</div><div class="tbtn-lbl">Envoyer</div></div>
+        </div>
+      </div>
+      <div class="dx-body">
+        <div class="dx-doc"><span style="font-size:.85rem">🧾</span><div class="dx-lines"><div class="dx-line"></div><div class="dx-line short"></div></div><div class="dx-badge ok">Validée</div></div>
+        <div class="dx-doc"><span style="font-size:.85rem">📋</span><div class="dx-lines"><div class="dx-line"></div><div class="dx-line short"></div></div><div class="dx-badge ok">Validée</div></div>
+        <div class="dx-doc scanning" id="dx-d3"><span style="font-size:.85rem">🧾</span><div class="dx-lines"><div class="dx-line"></div><div class="dx-line short"></div></div><div class="dx-scan-bar" id="dx-scan3"><div class="dx-scan-fill" id="dx-fill3"></div></div><div class="dx-badge scan" id="dx-badge3">Analyse OCR…</div></div>
+      </div>
+      <div class="tool-statusbar dx-bar">
+        <span class="tstatus" style="color:rgba(255,255,255,.7)">3 documents</span>
+        <span id="dx-status" class="tstatus" style="color:rgba(255,255,255,.7)">Traitement…</span>
+      </div>
+    </div>
+
+    <div class="tool-wrap od-wrap">
+      <div class="tool-titlebar od-bar">
+        <div class="tool-logo" style="background:#fff;color:#714B67">O</div>
+        <div class="tool-dots"><div class="tdot" style="background:#FF5F57"></div><div class="tdot" style="background:#FEBC2E"></div><div class="tdot" style="background:#28C840"></div></div>
+      </div>
+      <div class="tool-tabs od-tabs">
+        <div class="ttab od-ttab active">Facturation</div><div class="ttab od-ttab">Ventes</div>
+        <div class="ttab od-ttab">Achats</div><div class="ttab od-ttab">Reporting</div>
+      </div>
+      <div class="od-ribbon">
+        <div class="tgroup">
+          <div class="tbtn od-tbtn"><div class="tbtn-icon od-tbtn-icon">📊</div><div class="tbtn-lbl">Dashboard</div></div>
+          <div class="tbtn od-tbtn"><div class="tbtn-icon od-tbtn-icon">+</div><div class="tbtn-lbl">Créer</div></div>
+        </div>
+        <div class="tgroup">
+          <div class="tbtn od-tbtn"><div class="tbtn-icon od-tbtn-icon" style="font-size:.55rem">€</div><div class="tbtn-lbl">Devis</div></div>
+          <div class="tbtn od-tbtn"><div class="tbtn-icon od-tbtn-icon">🔍</div><div class="tbtn-lbl">Filtrer</div></div>
+        </div>
+      </div>
+      <div class="od-body">
+        <div class="od-kpis">
+          <div class="od-kpi"><div class="od-kpi-lbl">Chiffre d'affaires</div><div class="od-kpi-bar"><div class="od-kpi-fill" id="od-k1" style="width:0%"></div></div><div class="od-kpi-val" id="od-v1">…</div></div>
+          <div class="od-kpi"><div class="od-kpi-lbl">Factures émises</div><div class="od-kpi-bar"><div class="od-kpi-fill" id="od-k2" style="width:0%"></div></div><div class="od-kpi-val" id="od-v2">…</div></div>
+          <div class="od-kpi"><div class="od-kpi-lbl">Paiements reçus</div><div class="od-kpi-bar"><div class="od-kpi-fill" id="od-k3" style="width:0%"></div></div><div class="od-kpi-val" id="od-v3">…</div></div>
+          <div class="od-kpi"><div class="od-kpi-lbl">Fournisseurs</div><div class="od-kpi-bar"><div class="od-kpi-fill" id="od-k4" style="width:0%"></div></div><div class="od-kpi-val" id="od-v4">…</div></div>
+        </div>
+      </div>
+      <div class="tool-statusbar od-bar">
+        <span class="tstatus" style="color:rgba(255,255,255,.7)">Agrikagna · 2026</span>
+        <span id="od-status" class="tstatus" style="color:rgba(255,255,255,.7)">Chargement…</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="deco-band"><div class="band-inner">
+  <span class="band-txt">∑ · € · % · π · ± · √ · ∞ · ≠ · △ · ∫ · = · ÷ ·&nbsp;</span>
+  <span class="band-txt">∑ · € · % · π · ± · √ · ∞ · ≠ · △ · ∫ · = · ÷ ·&nbsp;</span>
+</div></div>
+
+<section id="experiences" style="max-width:1100px;margin:0 auto">
+  <div class="section-tag">Parcours</div>
+  <h2>Expériences</h2>
+  <p class="section-intro">Des postes variés, une constante : la rigueur et l'engagement.</p>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-meta">Sept. 2025 – Sept. 2026</div><div class="tl-role">Assistante Administrative &amp; Comptable (alternance)</div><div class="tl-org">AGRIKAGNA SARL – UCOOPAM · Combani, Mayotte</div><ul class="tl-desc"><li>Interface avec le Cabinet Culture Conseil (paie &amp; comptabilité externalisée)</li><li>Transmission des variables de paie, gestion DSN et dossiers salariés</li><li>Saisie et contrôle des factures via Dext, rapprochement bancaire</li><li>Suivi des contrats et planification des formations (CACES R482)</li><li>Création d'outils Excel automatisés : ventes, achats, rentabilité chantiers</li></ul></div>
+    <div class="tl-item"><div class="tl-meta">Avr. – Juin 2025</div><div class="tl-role">Employée Polyvalente</div><div class="tl-org">Food Kourt · Saint-Herblain</div><ul class="tl-desc"><li>Accueil et conseil client, encaissement et prise de commande</li><li>Entretien de l'espace de vente, respect des normes d'hygiène</li></ul></div>
+    <div class="tl-item"><div class="tl-meta">Fév. – Avr. 2025</div><div class="tl-role">Agent de Tri</div><div class="tl-org">Amazon · Carquefou</div><ul class="tl-desc"><li>Tri et expédition des colis dans le respect des délais et des normes qualité</li><li>Rigueur, gestion du temps et travail en équipe en environnement dynamique</li></ul></div>
+    <div class="tl-item"><div class="tl-meta">Août 2024 – Jan. 2025</div><div class="tl-role">Employée Polyvalente</div><div class="tl-org">McDonald's · Nantes</div><ul class="tl-desc"><li>Gestion de la caisse et encaissement</li><li>Maintien de la propreté et de l'hygiène de l'espace de travail</li></ul></div>
+    <div class="tl-item"><div class="tl-meta">2023</div><div class="tl-role">Comptable Bénévole</div><div class="tl-org">Banque Alimentaire · Brest</div><ul class="tl-desc"><li>Tenue des écritures comptables, suivi des dépenses et gestion des factures</li><li>Préparation des rapports pour assurer la transparence des comptes</li><li>Collaboration pour optimiser la gestion administrative</li></ul></div>
+    <div class="tl-item"><div class="tl-meta">2022 – 2023</div><div class="tl-role">Animatrice Périscolaire</div><div class="tl-org">PL Le Gouil · Brest</div><ul class="tl-desc"><li>Conception et mise en place d'activités récréatives adaptées aux différents groupes d'âge</li></ul></div>
+    <div class="tl-item"><div class="tl-meta">2023</div><div class="tl-role">Animatrice Périscolaire</div><div class="tl-org">PLM Cavale Blanche · Brest</div><ul class="tl-desc"><li>Organisation et animation d'activités ludiques et éducatives</li><li>Participation à la planification des programmes d'activités</li></ul></div>
+    <div class="tl-item"><div class="tl-meta">2022 – 2023</div><div class="tl-role">Animatrice Remplaçante</div><div class="tl-org">Mairie de Brest · Écoles publiques</div><ul class="tl-desc"><li>Remplacement en école publique, adaptabilité et prise en charge autonome de groupes d'enfants</li></ul></div>
+    <div class="tl-item"><div class="tl-meta">2022</div><div class="tl-role">Inventoriste</div><div class="tl-org">Cabesto · Brest</div><ul class="tl-desc"><li>Comptage et saisie d'inventaire avec rigueur et précision des données</li></ul></div>
+  </div>
+</section>
+
+<div class="deco-band"><div class="band-inner">
+  <span class="band-txt">DÉBIT · CRÉDIT · BILAN · RÉSULTAT · PAIE · DSN · LIASSE · COTISATIONS · LETTRAGE · SOLDE · TRÉSORERIE · FISCALITÉ ·&nbsp;</span>
+  <span class="band-txt">DÉBIT · CRÉDIT · BILAN · RÉSULTAT · PAIE · DSN · LIASSE · COTISATIONS · LETTRAGE · SOLDE · TRÉSORERIE · FISCALITÉ ·&nbsp;</span>
+</div></div>
+
+<section id="competences">
+  <div class="section-tag">Savoir-faire</div><h2>Compétences</h2><p class="section-intro">Des outils maîtrisés, des méthodes éprouvées.</p>
+  <div class="skills-grid">
+    <div class="skill-cat c1"><div class="skill-cat-title">Comptabilité &amp; Paie</div><div class="skill-item">Comptabilité générale &amp; analytique</div><div class="skill-item">Bulletins de paie &amp; DSN</div><div class="skill-item">Charges sociales (France / Mayotte)</div><div class="skill-item">Rapprochement bancaire</div><div class="skill-item">Saisie factures &amp; lettrage</div></div>
+    <div class="skill-cat c2"><div class="skill-cat-title">Outils &amp; Logiciels</div><div class="skill-item">Excel avancé (TCD, formules)</div><div class="skill-item">Odoo – facturation / reporting</div><div class="skill-item">Dext – saisie factures</div><div class="skill-item">Silae – logiciel de paie</div><div class="skill-item">Pack Office complet</div></div>
+    <div class="skill-cat c3"><div class="skill-cat-title">Langues</div><div class="skill-item">Français – courant</div><div class="skill-item">Anglais – niveau intermédiaire</div><div class="skill-item">Espagnol – niveau intermédiaire</div><div class="skill-item">Mahorais – langue maternelle</div></div>
+    <div class="skill-cat c4"><div class="skill-cat-title">Qualités</div><div class="skill-item">Rigueur &amp; sens du détail</div><div class="skill-item">Organisation &amp; gestion du temps</div><div class="skill-item">Discrétion &amp; confidentialité</div><div class="skill-item">Sens du relationnel</div><div class="skill-item">Maîtrise des outils informatiques</div></div>
+  </div>
+</section>
+
+<section id="formations">
+  <div class="section-tag">Diplômes</div><h2>Formations</h2><p class="section-intro">Un socle solide, une progression continue.</p>
+  <div class="edu-list">
+    <div class="edu-card highlight"><div class="edu-year">2026→</div><div><div class="edu-diploma">DGC – Diplôme de Gestion et de Comptabilité</div><div class="edu-school">CNAM Nancy · candidature en cours</div><div class="edu-detail">Formation en alternance visée · Niveau 6 RNCP</div></div></div>
+    <div class="edu-card"><div class="edu-year">2025–26</div><div><div class="edu-diploma">Titre Pro Gestionnaire de Paie – Niv. 5 RNCP 35750</div><div class="edu-school">IGENSIA / CFA CréApprentis · Mayotte</div><div class="edu-detail">Sept. 2025 – Sept. 2026 · Paie, DSN, charges sociales · Silae, Dext, Odoo</div></div></div>
+    <div class="edu-card"><div class="edu-year">2025</div><div><div class="edu-diploma">Certification HACCP</div><div class="edu-school">Leader Academy · Sautron</div><div class="edu-detail">Juin – Juillet 2025</div></div></div>
+    <div class="edu-card"><div class="edu-year">2025</div><div><div class="edu-diploma">Formation POEI – Outils administratifs &amp; relation client</div><div class="edu-school">France Travail · Saint-Herblain</div><div class="edu-detail">Avril – Juin 2025</div></div></div>
+    <div class="edu-card"><div class="edu-year">2022–24</div><div><div class="edu-diploma">L2 Économie et Gestion</div><div class="edu-school">Université de Brest</div><div class="edu-detail">Comptabilité générale, droit, management, microéconomie et macroéconomie</div></div></div>
+    <div class="edu-card"><div class="edu-year">2019–21</div><div><div class="edu-diploma">Baccalauréat Général – Mathématiques &amp; Sciences</div><div class="edu-school">LPO Gustave Eiffel · Mayotte</div><div class="edu-detail">Mathématiques, logique, méthode scientifique</div></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-tag">Me joindre</div><h2>Contact</h2><p class="section-intro">Disponible pour une alternance DGC à partir de septembre 2026.</p>
+  <div class="contact-grid">
+    <div class="contact-block"><div class="contact-label">Email</div><div class="contact-value">nasrasoulaimane@gmail.com</div></div>
+    <div class="contact-block"><div class="contact-label">Téléphone</div><div class="contact-value">06 69 33 67 42</div></div>
+    <div class="contact-block"><div class="contact-label">Localisation</div><div class="contact-value">Tsingoni, Mayotte → Nancy sept. 2026</div></div>
+    <div class="contact-block"><div class="contact-label">Statut</div><div class="contact-value">Ouverte aux opportunités d'alternance</div></div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-name">Nasra Soulaimane</span>
+  <span class="footer-tag">Candidate DGC · CNAM Nancy · 2026</span>
+</footer>
+
+<script>
+const xlRows=[['v','v','v2','',''],['','v','v2','v2',''],['v','v','','v2',''],['v','','v2','','v'],['','v','','v2','v']];
+const xlBody=document.getElementById('xl-body');
+function buildGrid(selR,selC){xlBody.innerHTML='';xlRows.forEach((row,r)=>{const div=document.createElement('div');div.className='xg-row';const idx=document.createElement('div');idx.className='xg-cell idx';div.appendChild(idx);row.forEach((cls,c)=>{const cell=document.createElement('div');cell.className='xg-cell'+(cls?' '+cls:'')+(r===selR&&c===selC?' sel':'');div.appendChild(cell);});xlBody.appendChild(div);});}
+const formulas=['=SOMME(B2:B10)','=SI(A2>0,"OK","")','=RECHERCHEV(A2,D:E,2,0)','=ROUND(C3*1.2,2)','=NB.SI(B:B,">0")'];
+const statuses=['Calcul…','Prêt','Saisie…','Prêt','Recalcul…'];
+let xlSel=[0,0],xlFi=0,xlSi=0;
+function animXl(){xlSel=[(xlSel[0]+1)%5,(xlSel[1]+1)%5];buildGrid(xlSel[0],xlSel[1]);document.getElementById('xl-formula-txt').textContent=formulas[xlFi%formulas.length];document.getElementById('xl-status').textContent=statuses[xlSi%statuses.length];xlFi++;xlSi++;}
+buildGrid(0,0);setInterval(animXl,1800);
+
+const slBars=[{id:'sl-b1',targets:[55,72,78,60,78]},{id:'sl-b2',targets:[25,38,42,30,38]},{id:'sl-b3',targets:[40,58,62,48,62]},{id:'sl-b4',targets:[10,18,22,14,22]}];
+const slStatuses=['Calcul en cours…','Variables chargées','Cotisations calculées','Bulletin généré ✓','DSN transmise ✓'];
+let slStep=0;
+function animSl(){slBars.forEach(b=>{document.getElementById(b.id).style.width=b.targets[slStep%b.targets.length]+'%';});document.getElementById('sl-status').textContent=slStatuses[slStep%slStatuses.length];slStep++;}
+setTimeout(()=>{animSl();setInterval(animSl,2200);},400);
+
+let dxProg=0,dxDone=false;
+function animDx(){if(!dxDone){dxProg=Math.min(dxProg+12,100);document.getElementById('dx-fill3').style.width=dxProg+'%';if(dxProg>=100){dxDone=true;setTimeout(()=>{document.getElementById('dx-d3').classList.remove('scanning');document.getElementById('dx-scan3').style.display='none';document.getElementById('dx-badge3').className='dx-badge ok';document.getElementById('dx-badge3').textContent='Validée ✓';document.getElementById('dx-status').textContent='3 validées ✓';setTimeout(()=>{dxProg=0;dxDone=false;document.getElementById('dx-d3').classList.add('scanning');document.getElementById('dx-scan3').style.display='block';document.getElementById('dx-badge3').className='dx-badge scan';document.getElementById('dx-badge3').textContent='Analyse OCR…';document.getElementById('dx-status').textContent='Traitement…';},3000);},300);}}}
+setInterval(animDx,200);
+
+const odKpis=[{bar:'od-k1',val:'od-v1',w:72,label:'↑ 72%'},{bar:'od-k2',val:'od-v2',w:55,label:'14 fact.'},{bar:'od-k3',val:'od-v3',w:80,label:'À jour ✓'},{bar:'od-k4',val:'od-v4',w:40,label:'3 att.'}];
+let odLoaded=false;
+function animOd(){if(odLoaded)return;odLoaded=true;odKpis.forEach((k,i)=>{setTimeout(()=>{document.getElementById(k.bar).style.width=k.w+'%';setTimeout(()=>{document.getElementById(k.val).textContent=k.label;},600);},i*400);});setTimeout(()=>{document.getElementById('od-status').textContent='Synchronisé ✓';},2200);setTimeout(()=>{odKpis.forEach(k=>{document.getElementById(k.bar).style.width='0%';document.getElementById(k.val).textContent='…';});document.getElementById('od-status').textContent='Actualisation…';odLoaded=false;setTimeout(animOd,800);},8000);}
+setTimeout(animOd,600);
+</script>
+</body>
+</html>
